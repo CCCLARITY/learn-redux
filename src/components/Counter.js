@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 // import classnames from 'classnames';
-import styles from './Counter.css';
-require('./Counter.css');
+import styles from './Counter.module.css';
 
 class Counter extends Component{
 
@@ -9,8 +8,10 @@ class Counter extends Component{
     //     super(props)
 
     // }
+    
 
     render(){
+        
         return <div className={styles.wrapper}>
             <div>点击了0次</div>
             <button>+</button>
